@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  display: flex;
+}
+
+header {
+  background: mediumspringgreen;
+  width: 20vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  background-color: crimson;
+  width: 80vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 100px;
+}
+
+img.foto-perfil {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  margin-bottom: 30px;
+}
+
+ul {
+  list-style: none;
+}
+
+/*
+  estilo utilizado para ter um espaço entre um item e outro da lista
+  essa estilização só será aplicada aos itens (li)
+  da lista com classe lista-links
+*/
+ul.lista-links li {
+  margin-bottom: 10px;
+  font-size: 20px;
+  text-align: center;
+}
+
+/*
+  estilo utilizado para deixar os itens da lista um ao lado do outro
+  essa estilização só será aplicada aos itens 
+  da lista com classe lista-redes-sociais
+*/
+ul.lista-redes-sociais {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 
+  essa estilização só será aplicada a todas as imagens que estiverem
+  dentro da lista nao-ordenada com a classe lista-redes-sociais
+  dentro dos respectivos itens (li) dessa lista
+*/
+ul.lista-redes-sociais li img {
+  width: 40px;
+  margin: 0 10px; /*0 superior e inferior | 10px direita e esquerda */
+}
+
+/*remove decorações de links (sublinhado)*/
+a {
+  text-decoration: none;
+}
+
+/*
+  sessao que conterá os dados pessoais do individuo (nome, email, endereço)
+*/
+section.dados-pessoais {
+  width: 700px;
+  height: 200px;
+  background-color: aqua;
+  text-align: center;
+}
+
+/* div que conterá a listagem de imagens com links das redes sociais */
+div.container {
+  background-color: rgb(155, 94, 212);
+  height: 40px;
+  width: 200px;
+  text-align: center;
+}
